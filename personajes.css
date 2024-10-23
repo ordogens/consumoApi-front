@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px greenyellow;
+    font-size: 5rem;
+}
+
+button{
+    
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    font-family: monospace;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    background-color: yellowgreen;
+}
+
+.img{
+    
+    border-radius: 80%; /* Hace que las imágenes sean redondas */
+    box-shadow: 2xp 2xp 100xp 4xp red;
+}
