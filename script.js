@@ -1,4 +1,9 @@
 document.getElementById('Load').addEventListener('click', fetchCharacters)
+document.getElementById('Refresh').addEventListener('click', refreshPage)
+
+function refreshPage(){
+    location.reload()
+}
 
 function fetchCharacters () {
     const urlApi = 'https://rickandmortyapi.com/api/character'
@@ -14,11 +19,14 @@ function fetchCharacters () {
             characterElement.innerHTML = `
             <h2>${character.name}</h2>
             <image class='img' src = '${character.image}'> </image>
-            <p> ${character.species}</p>
+            <p class = 'per'> ${character.species}</p>
             <p> ${character.status}</p>
             `
             characterContainer.appendChild(characterElement);
         });
     })
     .catch(err => console.error("error", err));
+
+    
+    
 }

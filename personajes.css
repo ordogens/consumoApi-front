@@ -6,11 +6,19 @@
 
 body{
     
-    background-color: green;
+    
+    background-image: linear-gradient(270deg, greenyellow, green);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    
 }
+
+/* body div {
+    display: flex;
+
+} */
 
 h1{
     text-align: center;
@@ -25,14 +33,56 @@ button{
     height: 2rem;
     font-family: monospace;
     transition: all 0.5s ease-in-out;
+    border-radius: 25%;
+    margin: 5px;
+    
 }
 
 button:hover{
-    background-color: yellowgreen;
+    background-color: gray;
+    box-shadow: 2px 2px 20px 4px red;
+    
 }
 
-.img{
-    
-    border-radius: 80%; /* Hace que las imágenes sean redondas */
-    box-shadow: 2xp 2xp 100xp 4xp red;
+.per{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px 4px greenyellow;
+
+}
+
+p{
+
+
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px 4px blue;
+}
+
+h2{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px 4px red;
+}
+
+img {
+    border-radius: 80%; 
+    transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 2px 2px 20px 4px red;
+
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
 }
